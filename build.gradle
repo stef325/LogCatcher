@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = "com.github.stef325"
+version = "1.0.0"   // coloque a mesma versão da sua release
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']   // sua pasta src não segue o padrão do Gradle
+        }
+    }
+}
