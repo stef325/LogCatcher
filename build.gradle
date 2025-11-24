@@ -1,15 +1,22 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group = "com.github.stef325"
-version = "1.0.2"  
+version = "1.0.3"  
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(8)
+    
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
     }
 }
 
