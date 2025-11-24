@@ -3,17 +3,20 @@ plugins {
 }
 
 group = "com.github.stef325"
-version = "1.0.0"  
+version = "1.0.2"  
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
 }
 
-sourceSets {
+/*sourceSets {
     main {
         java {
             srcDirs = ['src']  
         }
     }
-}
+}*/

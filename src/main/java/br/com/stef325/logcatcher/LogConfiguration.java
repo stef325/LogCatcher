@@ -1,4 +1,4 @@
-package br.com.stef325.logcatcher;
+package main.java.br.com.stef325.logcatcher;
 
 public class LogConfiguration {
 	
